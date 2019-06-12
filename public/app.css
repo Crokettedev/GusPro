@@ -1,0 +1,118 @@
+body{ 
+	background-color: white;
+	font-family: 'Crete Round', serif;
+	color: black;
+}
+
+#navbar-home{
+	background-color: white;
+	color: black;
+	text-align: center;
+	text-decoration-color: #ffffff;
+}
+
+#nav-link{
+	color: black;
+	cursor: pointer;
+}
+
+.navbar-toggler{
+	border: transparent;
+}
+
+#navbar-toggler-icon{
+	color: black;
+}
+
+#buttonConnexion{
+	color: white;
+	font-size: 26px;
+	cursor: pointer;
+}
+
+#card-index-inscription{
+	border-color: transparent;
+}
+
+#card-index-inscription-title{
+	text-align: center;
+	color: white;
+}
+
+#card-index-inscription-emailHelp{
+	text-align: center;
+	color: white;
+}
+
+#card-index-inscription-btn{
+	background-color: #994d00;
+	color: white;
+	border-color: transparent;
+}
+
+#card-index-readmore{
+	border-color: transparent;
+}
+
+#card-index-readmore-title{
+	text-align: center;
+	color: white;
+}
+
+#card-index-readmore-emailHelp{
+	text-align: center;
+	color: white;
+}
+
+#card-index-readmore-btn{
+	background-color: #994d00;
+	color: white;
+	border-color: transparent;
+}
+
+#card-inscription{
+	border-color: transparent;
+}
+
+#card-inscription-title{
+	text-align: center;
+	color: white;
+}
+
+#card-inscription-emailHelp{
+	text-align: center;
+	color: white;
+}
+
+#card-inscription-label{
+	color: white;
+}
+
+#card-inscription-button{
+	padding: 2px; background-color: #994d00; border-color: transparent; font-size: 18px;
+}
+
+#plan1{
+	background-color: #ffffff;
+	width: 900px;
+	height: 636px;
+	margin-left: 325px;
+	position: relative;
+	z-index:0;
+}
+#plan2{
+	background-color: #ffffff;
+	width: 900px;
+	height: 636px;
+	margin-left: 325px;
+	position: relative;
+	z-index:1;
+}
+
+.btn:focus, .btn:active{
+	outline: none !important;
+	box-shadow: none !important;
+}
+button:focus{
+	outline: 0;
+}

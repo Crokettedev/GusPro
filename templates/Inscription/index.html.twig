@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+{% block title %}Réservation{% endblock %}
+{% block body %}
+    <br>
+    <div class="container">
+        <div class="card bg-transparent" id="card-inscription">
+            <h5 class="card-title" id="card-inscription-title">Inscrivez-vous !</h5>
+            <small class="form-text" id="card-inscription-emailHelp">Profitez de nos espaces et découvrez une nouvelle manière de travailler.&nbsp;<i class='fas fa-child' style="color: white;"></i></small>
+            <form>
+                 <div class="form-group">
+                    <label for="exampleInputEmail1" id="card-inscription-label">Nom</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nom">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1" id="card-inscription-label">Prénom</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Prénom">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1" id="card-inscription-label">Mot de passe</label>
+                    <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Mot de passe">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1" id="card-inscription-label">Confirmer le mot de passe</label>
+                    <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Confirmer le mot de passe">
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg btn-block" id="card-inscription-button">Envoyer</button>
+            </form>
+        </div>
+        <br>
+    </div>
+{% endblock %}
