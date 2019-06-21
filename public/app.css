@@ -71,7 +71,12 @@ body{
 }
 
 #card-inscription{
-	border-color: transparent;
+	border-color: #994d00;
+	border-width: medium;
+}
+
+#card-inscription-header{
+	border-color: #994d00;
 }
 
 #card-inscription-title{
@@ -115,4 +120,107 @@ body{
 }
 button:focus{
 	outline: 0;
+}
+
+.form-control:focus, .form-control:active{
+	outline: none !important;
+	box-shadow: none !important;
+}
+input:focus{
+	outline: 0;
+}
+
+#input_inscrip{
+	border-color: #994d00;
+}
+
+#btn{
+	background-color: white;
+	border-color: #994d00;
+	border-width: medium;
+	color: #994d00;
+}
+
+.fas{
+	font-size: 30px;
+}
+
+#card-reservation-index{
+	border-color: transparent;
+}
+
+#card-reser{
+	border-color: #994d00;
+}
+
+h5{
+	text-align: center;
+}
+
+.page-footer{
+	background-color: #e3be7c;
+}
+
+#img_Gusto7{
+	width: 125px;
+}
+
+#img_Gusto7bis{
+	width: 180px;
+}
+
+#thumbnail{
+	width: 40px;
+}
+
+#ordi{
+	width: 40px;
+}
+
+#imprimante{
+	width: 40px;
+}
+
+#tasse{
+	width: 40px;
+}
+
+#donuts{
+	width: 40px;
+}
+
+#database{
+	width: 40px;
+}
+
+#arbre{
+	width: 40px;
+}
+
+#friends{
+	width: 40px;
+}
+
+#toureiffeil{
+	width: 40px;
+}
+
+#bureau{
+	width: 40px;
+}
+
+#wink{
+	width: 25px;
+}
+
+#card_principal_2{
+	border-color: transparent;
+}
+
+#card_principal_4{
+	border-color: transparent;
+}
+
+#card_principal_5{
+	border-color: transparent;
 }

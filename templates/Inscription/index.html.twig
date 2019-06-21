@@ -1,31 +1,198 @@
 {% extends 'base.html.twig' %}
-{% block title %}Réservation{% endblock %}
+{% block title %}Inscription{% endblock %}
 {% block body %}
     <br>
     <div class="container">
-        <div class="card bg-transparent" id="card-inscription">
-            <h5 class="card-title" id="card-inscription-title">Inscrivez-vous !</h5>
-            <small class="form-text" id="card-inscription-emailHelp">Profitez de nos espaces et découvrez une nouvelle manière de travailler.&nbsp;<i class='fas fa-child' style="color: white;"></i></small>
-            <form>
-                 <div class="form-group">
-                    <label for="exampleInputEmail1" id="card-inscription-label">Nom</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nom">
+        <div class="container">
+            <div class="card card-body text-center" id="card-reservation-index">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card" id="card-reser">
+                            <div class="card-header" id="card-reser">
+                                Avantages à vous inscire
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Gusto-Coffee prend soin de vous, start-ups, freelances, entreprises, coworkers,
+                                    en vous proposant de quoi se restaurer tout au long de la journée.
+                                    Mais notre attention ne s'arrête pas là, pour vous, nous avons mis en place un service à table pour déguster nos plats préparés sur place. Eh, oui, nos espaces sont aussi chez vous !</p>
+                                <div>
+                                    <a href="#"><img src="img/spaghetti.png" class="card-img-top" alt="..." style="width: 40px;"></a>
+                                    <a href="#"><img src="img/diet.png" class="card-img-top" alt="..." style="width: 40px;"></a>
+                                </div>
+                                <br>
+                                <a href="#" class="btn btn-primary" id="btn" data-toggle="modal" data-target="#exampleModal">Voir la carte</a>
+                                <br>
+                                <br>
+                                <p class="card-text">Chez Gusto-Coffee, la fidélité est toujours récompensée, en créant un compte vous accédez à notre programme de fidélité et bénéficier de réduction et des surprises tout au long de l'année.</p>
+                                <div>
+                                    <a href="#"><img src="img/giftbox.png" class="card-img-top" alt="..." style="width: 40px;"></a>
+                                </div>
+                                <br>
+                                <a href="#" class="btn btn-primary" id="btn" data-toggle="modal" data-target="#exampleModal1">Programme fidélité</a>
+                                <br>
+                                <br>
+                                <p class="card-text">Profitez d'un réseau de professionnel, avec notre platform de mise en relation entre professionnel. Soyez tous le temps proches de la communauté en téléchargent notre application.<br>
+                                Disponible sur android et App Store.</p>
+                                <div>
+                                    <a href="#"><img src="img/smartphone.png" class="card-img-top" alt="..." style="width: 40px;"></a>
+                                    <a href="#"><img src="img/Android.png" class="card-img-top" alt="..." style="width: 40px;"></a>
+                                    <a href="#"><img src="img/app-store.png" class="card-img-top" alt="..." style="width: 40px;"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card" id="card-reser">
+                            <div class="card-header" id="card-reser">
+                                S'inscrire
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Nom</label>
+                                        <input type="text" class="form-control" id="input_inscrip" placeholder="Nom">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Prénom</label>
+                                        <input type="text" class="form-control" id="input_inscrip" placeholder="Prénom">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email</label>
+                                        <input type="email" class="form-control" id="input_inscrip" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Nom de votre société*</label>
+                                        <input type="text" class="form-control" id="input_inscrip" placeholder="Nom de votre société">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Téléphone*</label>
+                                        <input type="text" class="form-control" id="input_inscrip" placeholder="Téléphone">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Mot de passe</label>
+                                        <input type="password" class="form-control" id="input_inscrip" placeholder="Mot de passe">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Votre profession*</label>
+                                        <input type="text" class="form-control" id="input_inscrip" placeholder="Votre profession">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary" id="btn">Inscription</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1" id="card-inscription-label">Prénom</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Prénom">
+            </div>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="card card-body text-center" id="card-reservation-index">
+
+                                <div class="card" id="card-reser">
+                                    <div class="card-header" id="card-reser">
+                                       La carte &nbsp;<img src="img/serving-dish.png" class="card-img-top" alt="..." style="width: 35px;"
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <a href="#"><img src="img/fish-and-chips.png" class="card-img-top" alt="..." style="width: 40px;"></a>
+                                        </div>
+                                        <p class="card-text"><b>Fish and chips</b><br>Nuggets de de poisson "Homemade", servis de base avec frites "maison" mais toujours avec la possibilité d'opter pour un autre accompagnement, salade composée ou riz..</p>
+                                        <br>
+                                        <br>
+
+                                        <div>
+                                            <a href="#"><img src="img/salad (1).png" class="card-img-top" alt="..." style="width: 40px;"></a>
+                                        </div>
+                                        <p class="card-text"><b>Salade composé</b><br>Salade fraichement cueilli, composé d'oeuf, pain en dès et du saumon ou du poulet, tout ceci avec une
+                                            sauce vinaigrette venu tout droit d'Italie</p>
+                                        <br>
+                                        <br>
+
+                                        <div>
+                                            <a href="#"><img src="img/spaghetti (1).png" class="card-img-top" alt="..." style="width: 40px;"></a>
+                                        </div>
+                                        <p class="card-text"><b>Pasta</b><br>Pasta bolognese : ragoût italien de bœuf avec des oignons, du céleri et des carottes dans une sauce italienne maison.</p>
+                                        <p>Pasta corbonara : Lardons et oignons dans une sauce crémeuse avec un œuf, du fromage italien et du persil.</p>
+                                        <br>
+                                        <br>
+
+                                        <div>
+                                            <a href="#"><img src="img/burger (1).png" class="card-img-top" alt="..." style="width: 40px;"></a>
+                                        </div>
+                                        <p class="card-text"><b>Burger maison</b><br>Burger, avec une viande 100% Francaise, accompagné de salade, tomate, fromage et oignon ou aucun des quatres.</p>
+                                        <br>
+                                        <br>
+
+                                        <div>
+                                            <a href="#"><img src="img/water.png" class="card-img-top" alt="..." style="width: 40px;"></a>
+                                            <a href="#"><img src="img/cocktail.png" class="card-img-top" alt="..." style="width: 40px;"></a>
+                                        </div>
+                                        <p class="card-text"><b>Boissons</b><br>Eau Vittel, Eau cristaline, Cocktail Copa, Cocktaill Gusto, Mojito.</p>
+                                        <br>
+                                        <br>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal" id="btn">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1" id="card-inscription-label">Mot de passe</label>
-                    <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Mot de passe">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1" id="card-inscription-label">Confirmer le mot de passe</label>
-                    <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Confirmer le mot de passe">
-                </div>
-                <button type="submit" class="btn btn-primary btn-lg btn-block" id="card-inscription-button">Envoyer</button>
-            </form>
+            </div>
+
+
         </div>
-        <br>
+
+        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="card card-body text-center" id="card-reservation-index">
+
+                    <div class="card" id="card-reser">
+                        <div class="card-header" id="card-reser">
+                            Programme de fidélité &nbsp;<img src="img/giftbox.png" class="card-img-top" alt="..." style="width: 30px;">
+
+                        <div class="card-body">
+                            <div>
+                                <a href="#"><img src="img/card.png" class="card-img-top" alt="..." style="width: 40px;"></a>
+                            </div>
+                            <p class="card-text"><b>La carte membre permet de cumuler des points, avoir une priorité sur les salons privées au moments de la réservation
+                                . Offres et avantages.</b></p>
+                            <br>
+                            <br>
+
+                            <div>
+                                <a href="#"><img src="img/respect.png" class="card-img-top" alt="..." style="width: 40px;"></a>
+                            </div>
+                            <p class="card-text"><b>Au bout de 7 jours cumulées, obtenez une journée gratuite et un cocktaill offert.</b></p>
+                            <br>
+                            <br>
+
+                            <div>
+                                <a href="#"><img src="img/respect.png" class="card-img-top" alt="..." style="width: 40px;"></a>
+                                <a href="#"><img src="img/respect.png" class="card-img-top" alt="..." style="width: 40px;"></a>
+                            </div>
+                            <p class="card-text"><b>Au bout de 30 jours cumulées, obtenez 2 journée gratuite, un repas de votre choix et un cocktaill offert.</b></p>
+                            <br>
+                            <br>
+
+                            <div>
+                                <a href="#"><img src="img/respect.png" class="card-img-top" alt="..." style="width: 40px;"></a>
+                                <a href="#"><img src="img/respect.png" class="card-img-top" alt="..." style="width: 40px;"></a>
+                                <a href="#"><img src="img/respect.png" class="card-img-top" alt="..." style="width: 40px;"></a>
+                            </div>
+                            <p class="card-text"><b>Au bout de 60 jours cumulées, obtenez une 5 journée gratuite, un repas de votre choix et un cocktaill offert et la possibilité de venir avec
+                                    deux collegues a vous qui ne paieront pas.</b></p>
+                            <br>
+                            <br>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal" id="btn">Fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
 {% endblock %}

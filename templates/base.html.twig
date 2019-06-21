@@ -8,37 +8,65 @@
         <link href="https://fonts.googleapis.com/css?family=Crete+Round&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <script src="https://kit.fontawesome.com/238a647158.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/238a647158.js"></script>
+		<script type="text/javascript" src="app.js"></script>
     </head>
     <body>
+	<div class="container">
     	<nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top" id="navbar-home">
-    		<a class="navbar-brand" href="{{ path('home') }}">Mettre logo ici</a>
+			<a class="navbar-brand" href="{{ path('home') }}"><img src="img/Gusto_7.png" class="mr-3" id="img_Gusto7"></a>
     		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     			<span class="navbar-toggler-icon" id="navbar-toggler-icon"></span>
     		</button>
     		<div class="collapse navbar-collapse" id="navbarSupportedContent">
     			<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="{{ path('Inscription') }}" id="nav-link">Inscription</a>
+						<a class="nav-link" href="{{ path('user_registration') }}" id="nav-link">Inscription</a>
 					</li>
     				<li class="nav-item">
-    					<a class="nav-link" href="{{ path('Reservation') }}" id="nav-link">Espaces</a>
+    					<a class="nav-link" href="{{ path('Reservation') }}" id="nav-link">Espace public</a>
     				</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{{ path('Reservation') }}" id="nav-link">Salons privées</a>
+					</li>
     				<li class="nav-item">
-    					<a class="nav-link" href="{{ path('Reservation') }}" id="nav-link">Salles privées</a>
+    					<a class="nav-link" href="{{ path('Contact') }}" id="nav-link">Notre histoire</a>
     				</li>
     			</ul>
     			<span class="navbar-text">
-    				<a class="nav-link" href="{{ path('Connexion') }}" id="nav-link">Connexion</a>
+    				<a class="nav-link" href="{{ path('app_login') }}" id="nav-link">Connexion</a>
     			</span>
     			
     		</div>
     	</nav>
+	</div>
     	
         {% block body %}{% endblock %}
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    	<script type="text/javascript" src="app.js"></script>
-    	<script src="https://kit.fontawesome.com/238a647158.js"></script>
+
+		<footer class="page-footer font-small blue">
+			<div class="footer-copyright text-center py-3">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<h5>Services</h5>
+							<p>Inscription<br>Espace public<br>Salons privées</p>
+						</div>
+						<div class="col">
+							<h5>Contact</h5>
+							<p>Notre histoire<br>contact@gusto.fr<br>
+								01 34 67 00 90 <br>
+								<a href="#"><img src="img/facebook.png" class="card-img-top" alt="..." style="width: 29px;"></a>
+								<a href="#"><img src="img/instagram.png" class="card-img-top" alt="..." style="width: 29px;"></a>
+								<a href="#"><img src="img/linkedin.png" class="card-img-top" alt="..." style="width: 29px;"></a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
     </body>
 </html>
